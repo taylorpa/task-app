@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/Notes/style.css">
+<title>Todo App</title>
+</head>
+<body>
+    <main class="app">         
+            <section class="greeting">
+                <h2 class="title">
+                    What's on your todo list, <input type="text" id="name" placeholder="Enter your name">
+                </h2>
+            </section>
+        <div class="main-content">      
+            <section class="create-a-task">
+                <h3>Create a task</h3>
+                <form id="new-task">
+                    <h4 class="enter-task">Enter a new task to your todo list</h4>
+                    <input type="text" name="content" id="content" placeholder="e.g get groceries">                             
+                    <h4>Pick a category</h4>
+                    <div class ="options">
+                        <label>
+                            <input type="radio" id="category1" name="category" value="work">
+                            <span class="bubble work"></span>
+                            <div>Work</div>
+                        </label>
+                        
+                        <label>
+                            <input type="radio" id="category2" name="category" value="personal">
+                            <span class="bubble personal"></span>
+                            <div>Personal</div>
+                        </label>
+                    </div>
+                    <input type="submit" value="Add Task">
+                </form>
+            </section>
+        
+        
+            <section class="list-of-tasks">
+                <h3 class="task-title">
+                    Tasks
+                </h3>
+                <div class="list" id="task-items"> 
+                    <!-- <div class="task-item done">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble work"></span>
+                        </label>
+                        <div class="task-content">
+                            <input type="text" value="Escalate ticket to development" readonly />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble personal"></span>
+                        </label>
+                        <div class="task-content">
+                            <input type="text" value="Go to they gym" readonly />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> --> 
+                </div>
+
+            </section>
+        </div>   
+
+
+
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+    <script src="main.js"></script>
+</html>
